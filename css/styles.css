@@ -1,0 +1,97 @@
+body {
+    background-color:bisque;
+    margin: 0;
+}
+main {
+    padding: 60px 40px;
+}
+h1{
+    text-align: center;
+    margin: 0;
+    margin-top: 30px;
+}
+h3{
+    text-align: center;
+}
+
+footer h4{
+    text-align: center;
+    background-color: grey;
+    color: white;
+    padding: 50px 0;
+    width: 100%;
+    margin: 0;
+}
+.contenedor h4{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+.boton_enviar,
+.boton_ganadores {
+    text-align: center;
+}
+.boton_ganadores {
+    margin-top: 30px;
+}
+#mostrar_ganadores{
+    background-color: green;
+    color: white;
+}
+#mostrar_perdedores{
+    background-color: red;
+    color: white;
+}
+ul{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    margin-top: 10px;
+}
+.contenedor_jugadores {
+    border: 2px solid black;
+    width: 100%;
+    max-width: 1100px;
+    height: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.contenedor {
+    margin: 5px 2.5px;
+    border: 1px solid black;
+}
+.contenedor h4 {
+    text-align: center;
+    margin: 0;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+.boton_enviar button {
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 20px 40px;
+    cursor: pointer;
+}
+.boton_ganadores button {
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 20px 40px;
+    cursor: pointer;
+}
+@media (min-width: 768px) {
+    .contenedor_jugadores {
+        height: 1000px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+}
+@media (min-width: 1024px) {
+    .contenedor_jugadores {
+        height: 600px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
